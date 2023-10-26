@@ -1,0 +1,9 @@
+version: '3'
+services:
+  my-nginx-app:
+    build: .
+
+  nginx-proxy:
+    build: ./proxy/
+    ports:
+      - "80:8080"
